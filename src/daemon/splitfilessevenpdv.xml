@@ -1,0 +1,31 @@
+<service>
+	<id>splitfilessevenpdv.exe</id>
+	<name>SplitFilesSevenPDV</name>
+	<description>Serviço para efetuar a quebra de lotes da SevenPDV para melhoria o processamento!</description>
+	<executable>C:\Program Files\nodejs\node.exe</executable>
+	<argument>--harmony</argument>
+	<argument>C:\projetos-drogacenter\dc-split-files-sevenpdv\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\projetos-drogacenter\dc-split-files-sevenpdv\src\app.js</argument>
+	<argument>--scriptoptions=</argument>
+	<argument>--log</argument>
+	<argument>SplitFilesSevenPDV wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<logmode>rotate</logmode>
+	<stoptimeout>30sec</stoptimeout>
+	<serviceaccount>
+		<domain>TI-005464</domain>
+		<user>LocalSystem</user>
+		<password></password>
+	</serviceaccount>
+	<workingdirectory>C:\projetos-drogacenter\dc-split-files-sevenpdv</workingdirectory>
+</service>

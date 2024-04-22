@@ -1,0 +1,19 @@
+{
+  "name": "dc-split-files-sevenpdv",
+  "version": "1.0.0",
+  "description": "Programa para quebrar os arquivos da SevenPDV para permitir processamento em filas",
+  "main": "app.js",
+  "scripts": {
+    "prod": "pm2 start src/app.js --name SplitFilesSevenPDV",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-service": "node install-service.js",
+    "uninstall-service": "node uninstall-service.js"
+  },
+  "author": "Danilo Sales",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.3",
+    "node-windows": "^1.0.0-beta.8"
+  }
+}

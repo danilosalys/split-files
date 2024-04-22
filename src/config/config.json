@@ -1,0 +1,17 @@
+{
+    "inputFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/recep_ftp/",
+    "outputFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/recep_splitFilesSevenPDV/",
+    "toProcessFolder": [
+        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao1/",
+        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao2/",
+        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao3/",
+        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao4/"
+    ],
+    "splitedFilesFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/splited_Files/",
+    "logFolder": "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/logs/",
+    "qtyLinesSplit": 100,
+    "groupOrdersByOnlyCNPJ": false,
+    "recordLogs": true,
+    "log_type": 0,
+    "timeIntervalCheckFolder": 1
+}
