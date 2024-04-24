@@ -1,2 +1,16 @@
 2024-04-24 10:06:38 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\projetos-drogacenter\dc-split-files-sevenpdv\node_modules\node-windows\lib\wrapper.js --file C:\projetos-drogacenter\dc-split-files-sevenpdv\src\app.js --scriptoptions= --log "Split Files Seven PDV wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2024-04-24 10:06:38 - Started 19360
+2024-04-24 10:13:56 - Stopping splitfilessevenpdv.exe
+2024-04-24 10:13:56 - ProcessKill 19360
+2024-04-24 10:13:56 - Found child process: 7328 Name: conhost.exe
+2024-04-24 10:13:56 - Found child process: 13488 Name: node.exe
+2024-04-24 10:13:56 - Stopping process 7328
+2024-04-24 10:13:56 - Send SIGINT 7328
+2024-04-24 10:13:56 - SIGINT to 7328 failed - Killing as fallback
+2024-04-24 10:13:56 - Stopping process 13488
+2024-04-24 10:13:56 - Send SIGINT 13488
+2024-04-24 10:13:56 - SIGINT to 13488 failed - Killing as fallback
+2024-04-24 10:13:56 - Stopping process 19360
+2024-04-24 10:13:56 - Send SIGINT 19360
+2024-04-24 10:13:56 - SIGINT to 19360 failed - Killing as fallback
+2024-04-24 10:13:56 - Finished splitfilessevenpdv.exe
