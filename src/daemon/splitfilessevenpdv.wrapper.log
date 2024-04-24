@@ -1,2 +1,0 @@
-2024-04-24 10:06:38 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\projetos-drogacenter\dc-split-files-sevenpdv\node_modules\node-windows\lib\wrapper.js --file C:\projetos-drogacenter\dc-split-files-sevenpdv\src\app.js --scriptoptions= --log "Split Files Seven PDV wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
-2024-04-24 10:06:38 - Started 19360
