@@ -1,6 +1,6 @@
-const config = require("../config/config.json");
+const config = require("../../config.json");
 const SplitFilesModel = require("../model/SplitFilesModel");
-const { logToFile } = require("../helpers");
+const { logToFile } = require("../utils");
 const INPUT_FOLDER = config.inputFolder;
 const OUTPUT_FOLDER = config.outputFolder;
 const SPLITED_FILES_FOLDER = config.splitedFilesFolder;
@@ -26,9 +26,9 @@ const SplitFilesController = {
 						? logToFile(
 								LOG_FOLDER,
 								`log_SplitSevenPDV.log`,
-								`INFO: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}  - The file ${
+								`INFO: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - The file ${
 									file.fileName
-								} does not need to be split \n `
+								} does not need to be split!`
 						  )
 						: null;
 					return;
@@ -47,16 +47,15 @@ const SplitFilesController = {
 					INPUT_FOLDER,
 					SPLITED_FILES_FOLDER
 				);
-
 				RECORD_LOG_Y_N && LOG_TYPE === 1
 					? logToFile(
 							LOG_FOLDER,
 							`log_SplitSevenPDV.log`,
-							`INFO: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}  - Original file: ${
+							`INFO: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Original file: ${
 								file.fileName
-							} \n Chuncks: \n ${splitedFiles
-								.map((splitedFile) => splitedFile.fileName)
-								.join("\n")}}`
+							}\n Chuncks:${splitedFiles.map(
+								(splitedFile) => "\n" + splitedFile.fileName
+							)}`
 					  )
 					: null;
 				return;

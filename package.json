@@ -4,7 +4,7 @@
   "description": "Programa para quebrar os arquivos da SevenPDV para permitir processamento em filas",
   "main": "app.js",
   "scripts": {
-    "prod": "pm2 start src/app.js --name SplitFilesSevenPDV",
+    "prod-monit": "pm2 start src/app.js --name SplitFilesSevenPDV",
     "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-service": "node install-service.js",

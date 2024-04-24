@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const FileHelpers = {
-	logToFile(logDirectory, logFileName, message) {
+	async logToFile(logDirectory, logFileName, message) {
 		if (!fs.existsSync(logDirectory)) {
 			fs.mkdirSync(logDirectory, { recursive: true });
 		}

@@ -1,8 +1,8 @@
 process.title = "Split Files SevenPDV";
 
-const config = require("../src/config/config.json");
+const config = require("../config.json");
 const SplitFilesController = require("./controller/SplitFilesController");
-const { logToFile } = require("../src/helpers");
+const { logToFile } = require("./utils");
 const cron = require("node-cron");
 const RECORD_LOG_Y_N = config.recordLogs;
 const LOG_FOLDER = config.logFolder;
@@ -27,7 +27,7 @@ const runSplitFilesSevenPDV = () => {
 			? logToFile(
 					LOG_FOLDER,
 					`log_SplitSevenPDV.log`,
-					`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}  - Error executing the program \n ${JSON.stringify(
+					`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}  - Error executing the program ${JSON.stringify(
 						error
 					)}`
 			  )
@@ -36,5 +36,7 @@ const runSplitFilesSevenPDV = () => {
 		splitFilesIsRunningNow = false;
 	}
 };
-console.log("Aplication running!");
+console.log(
+	`${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Aplication running!`
+);
 cron.schedule(`*/${INTERVAL_CHECK_FOLDER} * * * *`, runSplitFilesSevenPDV);

@@ -12,6 +12,6 @@
     "qtyLinesSplit": 100,
     "groupOrdersByOnlyCNPJ": false,
     "recordLogs": true,
-    "log_type": 0,
+    "logType": 0,
     "timeIntervalCheckFolder": 1
 }

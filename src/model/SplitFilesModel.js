@@ -1,5 +1,5 @@
-const config = require("../config/config.json");
-const { logToFile } = require("../helpers");
+const config = require("../../config.json");
+const { logToFile } = require("../utils");
 const path = require("path");
 const fs = require("fs");
 const QTY_LINES_SPLIT = config.qtyLinesSplit;
@@ -18,7 +18,7 @@ const SplitFilesModel = {
 					? logToFile(
 							LOG_FOLDER,
 							`log_SplitSevenPDV.log`,
-							`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - The folder "${folder}" does not exist. Check settings! \n `
+							`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - The folder "${folder}" does not exist. Check settings!`
 					  )
 					: null;
 				return [];
@@ -96,7 +96,7 @@ const SplitFilesModel = {
 							`log_SplitSevenPDV.log`,
 							`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - The file name ${
 								file.fileName
-							} is invalid for SevenPDV \n `
+							} is invalid for SevenPDV`
 					  )
 					: null;
 			}
@@ -118,7 +118,7 @@ const SplitFilesModel = {
 				? logToFile(
 						LOG_FOLDER,
 						`log_SplitSevenPDV.log`,
-						`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Error moving file ${fileName}!, ${error} \n `
+						`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Error moving file ${fileName}!, ${error}`
 				  )
 				: null;
 			throw new Error(`Error moving file ${fileName}!, error`);
@@ -135,7 +135,7 @@ const SplitFilesModel = {
 				? logToFile(
 						LOG_FOLDER,
 						`log_SplitSevenPDV.log`,
-						`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Error creating file ${fileName}!, ${error} \n `
+						`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Error creating file ${fileName}!, ${error}`
 				  )
 				: null;
 			throw new Error(`Error creating file ${fileName}`, error);
