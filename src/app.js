@@ -14,7 +14,7 @@ const runSplitFilesSevenPDV = () => {
 	if (splitFilesIsRunningNow) {
 		console.log(new Date().toLocaleString());
 		console.log(
-			new Date().toLocaleTimeString() + " - The last execution is not over yet"
+			new Date().toLocaleTimeString() + " - The last execution is not over yet!"
 		);
 		return;
 	}
