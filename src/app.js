@@ -27,7 +27,7 @@ const runSplitFilesSevenPDV = () => {
 			? logToFile(
 					LOG_FOLDER,
 					`log_SplitSevenPDV.log`,
-					`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}  - Error executing the program ${JSON.stringify(
+					`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Error executing the program ${JSON.stringify(
 						error
 					)}`
 			  )
