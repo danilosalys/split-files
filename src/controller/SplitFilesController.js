@@ -33,6 +33,22 @@ const SplitFilesController = {
 								} does not need to be split!`
 						  )
 						: null;
+
+					let filesWithoutSplitToProcess =
+						SplitFilesModel.getFiles(OUTPUT_FOLDER);
+
+					filesWithoutSplitToProcess.forEach((withoutSplitedFile) => {
+						index_output_folder > SEND_FOLDERS.length - 1
+							? (index_output_folder = 0)
+							: index_output_folder;
+
+						SplitFilesModel.moveFile(
+							withoutSplitedFile.fileName,
+							OUTPUT_FOLDER,
+							SEND_FOLDERS[index_output_folder]
+						);
+						index_output_folder++;
+					});
 					return;
 				}
 
