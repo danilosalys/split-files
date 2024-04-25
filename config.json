@@ -1,17 +1,23 @@
 {
     "inputFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/recep_ftp/",
-    "outputFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/recep_splitFilesSevenPDV/",
-    "toProcessFolder": [
-        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao1/",
-        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao2/",
-        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao3/",
-        "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/toProcess/transacao4/"
+    "outputFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/arquivos_particionados/",
+    "sendFolders": [
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao1/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao2/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao3/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao4/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao5/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao6/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao7/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao8/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao9/",
+        "//srvdc39/Mercanet/edi/ol/sevenpdv/transacao10/"
     ],
-    "splitedFilesFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/splited_Files/",
+    "splitedFilesFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/backups/",
     "logFolder": "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/logs/",
     "qtyLinesSplit": 100,
     "groupOrdersByOnlyCNPJ": false,
     "recordLogs": true,
-    "logType": 0,
+    "logType": 1,
     "timeIntervalCheckFolder": 1
 }
