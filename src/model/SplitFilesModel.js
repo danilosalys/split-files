@@ -121,9 +121,10 @@ const SplitFilesModel = {
 						`ERROR: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} - Error moving file ${fileName}!, ${error}`
 				  )
 				: null;
-			throw new Error(`Error moving file ${fileName}!, error`);
+			return false;
 		}
 	},
+
 	createSplitedFile(fileName, contentFile, outputFolder) {
 		try {
 			const outputFilePath = path.join(outputFolder, fileName);

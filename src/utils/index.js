@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const FileHelpers = {
+const Utils = {
 	async logToFile(logDirectory, logFileName, message) {
 		if (!fs.existsSync(logDirectory)) {
 			fs.mkdirSync(logDirectory, { recursive: true });
@@ -13,4 +13,4 @@ const FileHelpers = {
 	},
 };
 
-module.exports = FileHelpers;
+module.exports = Utils;
