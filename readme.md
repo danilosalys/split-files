@@ -64,6 +64,7 @@ Certifique-se de fornecer os caminhos absolutos corretos para os diretórios e a
 Os caminhos para os diretórios devem estar no formato correto para o sistema operacional em que o código será executado.
 As configurações podem ser ajustadas conforme necessário para atender aos requisitos específicos do ambiente de execução.
 
+## AMBIENTE DE TESTES
 Inicie o servidor
 
 ```bash
@@ -78,13 +79,19 @@ Inicie o servidor
 
 ## Instalação e Desinstalação do Serviço no Ambiente de Produção
 
-[para intalar]
+[para instalar]
 
-1. Copie o diretorio do projeto no servidor a ser instalado
+1. Caso não esteja instalado, faça a instalação do agent do Consul (monitor de saude do serviço)
 
-2. Faça a configuração do arquivo config.json
+- Abra o terminal com permissões de administrador e execute o comando abaixo (lembre-se de alterar os caminhos)
 
-3. Execute o script de instalação
+sc.exe create "Consul-service" binPath= "e:\consul\consul.exe agent -config-dir e:\consul\config" DisplayName= "Consul-service" start= auto
+
+2. Copie o diretorio do projeto no servidor a ser instalado
+
+3. Faça a configuração do arquivo config.json
+
+4. Execute o script de instalação
 
 ```bash
   npm run install-service
@@ -94,7 +101,7 @@ Após a instalação o serviço será executado automaticamente.
 
 [para desinstalar]
 
-4. Execute o script de desinstalação
+5. Execute o script de desinstalação
 
 ```bash
   npm run uninstall-service

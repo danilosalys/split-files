@@ -15,9 +15,10 @@
     ],
     "splitedFilesFolder": "//srvdc39/Mercanet/edi/ol/sevenpdv/backups/",
     "logFolder": "c:/projetos-drogacenter/dc-split-files-sevenpdv/folders/logs/",
+     "hostAplication":"SRVDC15",
     "qtyLinesSplit": 100,
     "groupOrdersByOnlyCNPJ": false,
     "recordLogs": true,
     "logType": 1,
-    "timeIntervalCheckFolder": 1
+    "timeIntervalCheckFolder": 1   
 }
